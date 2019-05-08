@@ -174,8 +174,6 @@ Parabéns! Você criou seu primeiro site e o executou usando um servidor web! N�
 
 Enquanto o servidor estiver rodando, o prompt do terminal não estará disponível para receber novos comandos. Na realidade, o terminal permite que você escreva texto, mas não irá executar nenhum comando. Isto acontece porque o servidor bloqueia o terminal enquanto ele mesmo recebe novos comandos.
 
-> Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
-
 Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
 
 Pronta para o próximo passo? Está na hora de criar conteúdo!

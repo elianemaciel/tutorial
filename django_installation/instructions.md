@@ -23,7 +23,7 @@ Antes de fazer isto, devemos garantir que temos instalada a última versão do `
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    ~$ python3 -m pip install --upgrade pip
 
 
 ### Instalando pacotes com requisitos
