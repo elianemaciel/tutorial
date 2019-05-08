@@ -1,3 +1,3 @@
 # Instalação do Django
 
-{% include "./instructions.md" %}
+{% include "instructions.md" %}
