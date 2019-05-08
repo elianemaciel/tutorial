@@ -21,12 +21,12 @@ Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propried
     ronronar()
     arranhar()
     alimentar(comida_de_gato)
-    
+
 
     ComidaDeGato
     ------------
     sabor
-    
+
 
 A ideia básica é descrever coisas reais em código a partir de suas propriedades (chamadas de `atributos`) e ações (chamadas de `métodos`).
 
@@ -43,7 +43,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
     author
     created_date
     published_date
-    
+
 
 Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
@@ -66,12 +66,12 @@ Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
-    
+
 
 {% filename %}Windows:{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
-    
+
 
 Você vai notar que um novo diretório `blog` foi criado e que ele contém vários arquivos. Algo como a lista abaixo:
 
@@ -92,7 +92,7 @@ Você vai notar que um novo diretório `blog` foi criado e que ele contém vári
         ├── settings.py
         ├── urls.py
         └── wsgi.py
-    
+
 
 Depois de criar uma aplicação, também precisamos dizer ao Django que ele deve usá-la. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
 
@@ -175,12 +175,12 @@ O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente,
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py makemigrations blog
+    ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
       blog/migrations/0001_initial.py:
-    
+
       - Create model Post
-    
+
 
 **Observação:** Lembre-se de salvar os arquivos que você editar. Caso contrário, o computador executará uma versão antiga que pode gerar mensagens de erro inesperadas.
 
@@ -188,12 +188,12 @@ O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py migrate blog
+    ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
       Rendering model states... DONE
       Applying blog.0001_initial... OK
-    
+
 
 Uhuu! Nosso modelo Post já está no banco de dados! Seria legal vê-lo, né? Vá para o próximo capítulo para descobrir como nosso Post se parece!

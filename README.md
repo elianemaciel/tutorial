@@ -35,3 +35,9 @@ Parabéns! Se você ainda tem tempo antes do workshop, seria útil começar a le
 * [Como a internet funciona](../how_the_internet_works/README.md) Se preferir pode ver o video do capitulo : [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc)
 
 * [Introdução à linha de comando](../intro_to_command_line/README.md) Se preferir pode ver o video do capitulo : [Sua nova amiga: a linha de comando](https://www.youtube.com/watch?v=jvZLWhkzX-8)
+
+# Vamos Começar?
+
+Verifique com sua monitora se o Python está instalado, se não estiver siga as instruções abaixo:
+
+* [Instalação do Python](python_installation/README.md)

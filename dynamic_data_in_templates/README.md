@@ -32,8 +32,6 @@ E o que vem agora? Para pegar os posts reais do modelo `Post`, precisamos de uma
 
 ## QuerySet
 
-Você já deve estar familiarizada com o modo que os QuerySets funcionam. Nós conversamos sobre isso no [capítulo QuerySets e ORM do Django](/django_orm/README. html).</p> 
-
 Agora queremos classificar as postagens publicadas por `published_date`, certo? Nós já fizemos isso no capítulo sobre QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
@@ -52,8 +50,8 @@ from django.utils import timezone
 from .models import Post
 
 
-def post_list(request): 
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date') 
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {})
 ```
 
@@ -74,10 +72,8 @@ from .models import Post
 
 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date') 
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
 Pronto! Hora de voltar para o nosso template e exibir essa QuerySet!
-
-Se quiser ler mais sobre QuerySets no Django, você deve dar uma olhada aqui: https://docs.djangoproject.com/en/2.0/ref/models/querysets/

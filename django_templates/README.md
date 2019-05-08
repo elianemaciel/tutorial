@@ -70,37 +70,6 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos que
 
 Você notou que dessa vez nós usamos uma notação um pouco diferente (`{{ post.title }}` ou `{{ post.text }}`)? Estamos acessando os dados em cada um dos campos que definimos no modelo do `Post`. Além disso, `|linebreaks` está passando o texto do post por um filtro, convertendo quebras de linha em parágrafos.
 
-## Mais uma coisa
-
-Seria bom ver se seu site ainda funciona na internet, né? Vamos tentar implantar a PythonAnywhere novamente. Aqui está um resumo dos passos…
-
-* Primeiro, envie seu código para o Github
-
-{% filename %}command-line{% endfilename %}
-
-    $ git status
-    [...]
-    $ git add --all .
-    $ git status
-    [...]
-    $ git commit -m "Modified templates to display posts from database."
-    [...]
-    $ git push
-    
-
-* Em seguida, faça login em [PythonAnywhere](https://www.pythonanywhere.com/consoles/) e vá para seu **console de Bash** (ou comece um novo) e execute:
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-
-    $ cd $USER.pythonanywhere.com
-    $ git pull
-    [...]
-    
-
-* Por fim, vá para a aba [Web app setup](https://www.pythonanywhere.com/web_app_setup/) e clique em **Reload** em sua aplicação Web. Sua atualização deve ter aparecido! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere não sincronizam com o resto de seus arquivos.
-
-Parabéns! Agora vá em frente e tente adicionar um novo post em seu Django admin (Lembre-se de adicionar published_date!). Certifique-se de que você está no Django admin do seu site pythonanywhere, https://yourname.pythonanywhere.com/admin. Em seguida, atualize a página para ver se o post aparece.
-
-Funcionou como mágica? Estamos orgulhosas! Afaste-se do seu computador um pouco, você merece uma pausa. :)
+Parabéns!! Estamos orgulhosas! Afaste-se do seu computador um pouco, você merece uma pausa. :)
 
 ![Figura 13.4](images/donut.png)

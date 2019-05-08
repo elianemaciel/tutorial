@@ -169,47 +169,4 @@ Pronto, podemos atualizar nossa página e ver se aquele `Page not found` sumiu.
 
 ![Página de detalhes da postagem](images/post_detail2.png)
 
-Uhuu! Funcionou!
-
-# Hora do Deploy!
-
-Seria bom ver se seu site ainda estará trabalhando no PythonAnywhere, né? Vamos tentar fazer a implantação novamente.
-
-{% filename %}command-line{% endfilename %}
-
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
-    
-
-Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/consoles/):
-
-{% filename %}command-line{% endfilename %}
-
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
-    $ git pull
-    [...]
-    
-
-(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
-
-## Atualizando os arquivos estáticos no servidor
-
-Servidores como o PythonAnywhere tratam arquivos estáticos (como os arquivos CSS) de forma diferente dos arquivos em Python, por que assim podem otimizar para que eles carreguem mais rápido. Como resultado, sempre que alteramos nossos arquivos CSS, precisamos rodar um comando extra no servidor para dizer a ele que os atualize. O comando se chama `collectstatic`.
-
-Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o PythonAnywhere usa um comando chamado `workon` que é bem parecido com o comando `source myenv/bin/activate` que vosê usa no seu computador):
-
-{% filename %}command-line{% endfilename %}
-
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
-    (ola.pythonanywhere.com)$ python manage.py collectstatic
-    [...]
-    
-
-O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Agora, fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
-
-De qualquer forma, estamos prontas para ir para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clicar em **Reload** (atualizar).
-
-Deve estar pronto! Arrasou :)
+Uhuu! Funcionou! Arrasou :)
