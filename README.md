@@ -32,8 +32,6 @@ Ele se parecerá (mais ou menos) com isso:
 
 Parabéns! Se você ainda tem tempo antes do workshop, seria útil começar a ler alguns dos capítulos iniciais:
 
-* [Como a internet funciona](../how_the_internet_works/README.md)
-* ![How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc)
+* [Como a internet funciona](../how_the_internet_works/README.md) Se preferir pode ver o video do capitulo : [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc)
 
-* [Introdução à linha de comando](../intro_to_command_line/README.md)
-* ![Sua nova amiga: a linha de comando](https://www.youtube.com/watch?v=jvZLWhkzX-8)
+* [Introdução à linha de comando](../intro_to_command_line/README.md) Se preferir pode ver o video do capitulo : [Sua nova amiga: a linha de comando](https://www.youtube.com/watch?v=jvZLWhkzX-8)
