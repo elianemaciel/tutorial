@@ -1,31 +1,10 @@
 # Seu primeiro projeto Django!
 
-> Parte deste capítulo é baseada nos tutoriais da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
-> Parte deste capítulo é baseado no [django-marcador tutorial](http://django-marcador.keimlink.de/) licenciado sobre Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
-
 Nós vamos criar um blog simples!
 
 O primeiro passo é iniciar um novo projeto Django. Basicamente, isso significa que devemos rodar alguns scripts providos pelo Django que vão criar um esqueleto de projeto Django para nós. O resultado é um conjunto de diretórios e arquivos que nós iremos utilizar e modificar mais tarde.
 
 Os nomes de alguns arquivos e diretórios são muito importantes para o Django. Você não deve renomear os arquivos que estamos prestes a criar. Mover para um lugar diferente também não é uma boa idéia. O Django precisa manter uma certa estrutura para conseguir encontrar algumas coisas importantes.
-
-> Lembre-se de rodar tudo no virtualenv. Se você não vê um prefixo `(myvenv)` em seu console, é necessário ativar o virtualenv. Nós explicamos como fazer isso no capítulo **Instalação do Django** na parte **Ambiente Virtual**. Digitar `myvenv\Scripts\activate` no Windows ou `source myvenv/bin/activate` no Mac OS / Linux fará isso para você.
-
-<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
-
-No MacOS ou no console do Linux, rode o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
-
-{% filename %}command-line{% endfilename %}
-
-    (myvenv) ~/djangogirls$ django-admin startproject mysite .
-    
-
-> O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
-> 
-> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
-
-<!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
@@ -33,12 +12,11 @@ No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
-    
+    C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
-> 
-> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin.exe`. A parte `(myvenv) C:\Users\Name\djangogirls>` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
+>
 
 <!--endsec-->
 
@@ -52,7 +30,7 @@ No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no
     │        wsgi.py
     │        __init__.py
     └───requirements.txt
-    
+
 
 > **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
 
@@ -108,7 +86,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Observação:** Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
-> 
+>
 > Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9.
 
 ## Configurando um banco de dados
@@ -133,9 +111,9 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate
-    Operations to perform: 
+    Operations to perform:
       Apply all migrations: auth, admin, contenttypes, sessions
-    Running migrations: 
+    Running migrations:
       Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
@@ -149,7 +127,7 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying sessions.0001_initial... OK
-    
+
 
 Pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
 
@@ -159,36 +137,36 @@ Você precisa estar no diretório que contém o arquivo `manage.py` (o diretóri
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver
-    
+    ~/djangogirls$ python manage.py runserver
+
 
 Se você usa um Chromebook, execute este comando:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-    
+    ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+
 
 Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o comando alternativo:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
+    ~/djangogirls$ python manage.py runserver 0:8000
+
 
 Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
-    
+
 
 Se você estiver com um Chromebook, sempre visite o servidor de teste acessando:
 
 {% filename %}browser{% endfilename %}
 
     https://django-girls-<your cloud9 username>.c9users.io
-    
+
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 

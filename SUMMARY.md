@@ -8,15 +8,12 @@
 * [Seu primeiro projeto Django!](django_start_project/README.md)
 * [Modelos do Django](django_models/README.md)
 * [Django Admin](django_admin/README.md)
-<!-- * [Deploy!](deploy/README.md) -->
 * [URLs](django_urls/README.md)
 * [Django views - hora de criar!](django_views/README.md)
 * [Introdução ao HTML](html/README.md)
-<!-- * [QuerySets e ORM do Django](django_orm/README.md) -->
 * [Dados dinâmicos em templates](dynamic_data_in_templates/README.md)
 * [Templates do Django](django_templates/README.md)
 * [CSS - Deixe tudo mais bonito!](css/README.md)
 * [Estendendo os templates](template_extending/README.md)
 * [Amplie sua aplicação](extend_your_application/README.md)
-<!-- * [Formulários do Django](django_forms/README.md) -->
 * [O que vem agora?](whats_next/README.md)

@@ -6,4 +6,4 @@ O Python foi criado na década de 1980 e seu principal objetivo é ser legível 
 
 # Instalação do Python
 
-{% include "/python_installation/instructions.md" %}
+{% include "./instructions.md" %}
