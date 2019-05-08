@@ -1,10 +1,10 @@
 # Sumário
 
 * [Introdução](README.md)
-* [Instalação](installation/README.md)
-* [Configuração do Chromebook](chromebook_setup/README.md)
-* [Como a Internet funciona](how_the_internet_works/README.md)
-* [Introdução à linha de comando](intro_to_command_line/README.md)
+<!-- * [Instalação](installation/README.md) -->
+<!-- * [Configuração do Chromebook](chromebook_setup/README.md) -->
+<!-- * [Como a Internet funciona](how_the_internet_works/README.md) -->
+<!-- * [Introdução à linha de comando](intro_to_command_line/README.md) -->
 * [Instalação do Python](python_installation/README.md)
 * [Editor de Código](code_editor/README.md)
 * [Introdução ao Python](python_introduction/README.md)
