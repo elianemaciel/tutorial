@@ -2,7 +2,7 @@
 
 Neste workshop, os computadores já estão com o Python instalado. Por isso você pode seguir próxima etapa [Introdução ao Python](../python_introduction/README.md)
 
-Se, mesmo assim for necessário fazer a instalaçã do Python, siga as instruções abaixo:
+Se, mesmo assim for necessário fazer a instalação do Python, siga as instruções abaixo:
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
