@@ -34,7 +34,7 @@ Depois de executar o comando Python, o prompt mudou para `>>>`. Isso significa q
 
 Se a qualquer momento você quiser sair do console do Python, apenas digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Então você não vai mais ver o `>>>`.
 
-Por enquanto, não queremos sair do console do Python. Queremos saber mais sobre ele. Vamos começar digitando um pouco de matemática, como `2 + 3`, e clicar `entrar`.
+Por enquanto, não queremos sair do console do Python. Queremos saber mais sobre ele. Vamos começar digitando um pouco de matemática, como `2 + 3`, e clicar no `Enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -60,19 +60,19 @@ Que tal o seu nome? Digite seu primeiro nome entre aspas, desse jeito:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola"
-'Ola'
+>>> "Maria"
+'Maria'
 ```
 
 Você acabou de criar sua primeira *string*! Uma *string* é uma sequência de caracteres que pode ser processada pelo computador. Ela deve sempre começar e terminar com o mesmo caractere. Este caractere pode ser aspas duplas (`"`) ou simples (`'`) (não há nenhuma diferença!). Elas dizem ao Python que o que está entre elas é uma string.
 
-Strings podem ser juntadas. Tente isto:
+Strings podem ser unidas. Tente isto:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola " + "Ola"
-'Ola Ola'
+>>> "Maria " + "Silva"
+'Maria Silva'
 ```
 
 Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
@@ -80,22 +80,22 @@ Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola".upper()
-'OLA'
+>>> "Maria".upper()
+'MARIA'
 ```
 
-Você acabou de usar a **função** `upper` na sua string! Uma função (como `upper()`) é um conjunto de instruções que o Python tem que realizar em um determinado objeto (`"Ola"`) sempre que você o chamar.
+Você acabou de usar a **função** `upper` na sua string! Uma função (como `upper()`) é um conjunto de instruções que o Python tem que realizar em um determinado objeto (`"Maria"`) sempre que você o chamar.
 
 Se você quer saber o número de letras contidas em seu nome, há uma **função** para isso também!
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len("Ola")
-3
+>>> len("Maria")
+5
 ```
 
-Talvez você esteja se perguntando porque algumas vezes chamamos funções com um `.` depois de uma string (como `"Ola".upper()`) e outras vezes primeiro chamamos a função e colocamos a string entre parênteses. Bem, em alguns casos, funções pertencem a objetos -- como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Em outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
+Talvez você esteja se perguntando porque algumas vezes chamamos funções com um `.` depois de uma string (como `"Maria".upper()`) e outras vezes primeiro chamamos a função e colocamos a string entre parênteses. Bem, em alguns casos, funções pertencem a objetos -- como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Em outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
 
 ### Sumário
 
@@ -110,7 +110,7 @@ Esse é o básico de todas as linguagens de programação que você aprender. Pr
 
 ## Erros
 
-Vamos tentar algo novo. Será que conseguimos saber a extensão de um número da mesma forma que descobrimos a dos nossos nomes? Digite `len(304023)` e clique `enter`:
+Vamos tentar algo novo. Será que conseguimos saber a extensão de um número da mesma forma que descobrimos a dos nossos nomes? Digite `len(304023)` e clique `Enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -121,7 +121,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Pyhton tem para avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Cometer erros (inclusive intencionalmente) é uma parte importante da aprendizamgem!
+Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Python tem para avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Cometer erros (inclusive intencionalmente) é uma parte importante da aprendizamgem!
 
 Nossa primeira mensagem de erro nos diz que objetos do tipo "int" (inteiros, naturais) não têm comprimento algum. Então o que podemos fazer agora? Podemos escrever nosso número como string? Strings têm comprimento, certo?
 
@@ -146,18 +146,18 @@ Digamos que queremos criar uma nova **variável** chamada `nome`:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> name = "Ola"
+>>> nome = "Maria"
 ```
 
-Digitamos: nome igual Ola.
+Digitamos: nome igual Maria.
 
-Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `name` e clicar `enter`:
+Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `nome` e clicar `Enter`:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> name
-'Ola'
+>>> nome
+'Maria'
 ```
 
 Uhuuu! Sua primeira variável! :) Você sempre pode mudar o valor dela:
@@ -165,8 +165,8 @@ Uhuuu! Sua primeira variável! :) Você sempre pode mudar o valor dela:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> name = "Sonja"
->>> name
+>>> nome = "Sonja"
+>>> nome
 'Sonja'
 ```
 
@@ -186,11 +186,11 @@ E se digitarmos errado o nome da variável? Você consegue imaginar o que aconte
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> city = "Tokyo"
->>> ctiy
+>>> cidade = "Londres"
+>>> cdiade
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-NameError: name 'ctiy' is not defined
+NameError: name 'cdiade' is not defined
 ```
 
 Um erro! Como você pode ver, o Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem de erro se você tentar usar uma variável que ainda não foi definida. Se você encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
@@ -202,14 +202,14 @@ Tente o seguinte:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> name = 'Maria'
->>> name
+>>> nome = 'Maria'
+>>> nome
 'Maria'
->>> print(name)
+>>> print(nome)
 Maria
 ```
 
-Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
+Quando você digita `nome`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções ou quando queremos imprimir algo em várias linhas.
 
@@ -231,7 +231,7 @@ Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma lista de
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lottery = [3, 42, 12, 19, 30, 59]
+>>> loteria = [3, 42, 12, 19, 30, 59]
 ```
 
 Legal, criamos uma lista! O que podemos fazer com ela? Vamos ver quantos números de loteria ela tem. Você tem ideia de qual é a função que deve usar para isso? Você já aprendeu ;)
@@ -239,7 +239,7 @@ Legal, criamos uma lista! O que podemos fazer com ela? Vamos ver quantos número
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(lottery)
+>>> len(loteria)
 6
 ```
 
@@ -250,8 +250,8 @@ Se você quiser adicionar alguma coisa à sua lista, digite o seguinte comando:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lottery.append(199)
->>> print(lottery)
+>>> loteria.append(199)
+>>> print(loteria)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
@@ -260,9 +260,9 @@ Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lottery[0])
+>>> print(loteria[0])
 59
->>> print(lottery[1])
+>>> print(loteria[1])
 42
 ```
 
@@ -288,22 +288,22 @@ Agora escreva o seguinte comando (e tente colocar suas próprias informações):
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+>>> participante = {'nome': 'Maria', 'cidade': 'Londres', 'numeros_favoritos': [7, 42, 92]}
 ```
 
-Com esse comando, você criou uma variável chamada `participant` com três pares de chave-valor:
+Com esse comando, você criou uma variável chamada `participante` com três pares de chave-valor:
 
-- A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
-- a chave `country` aponta para `'Poland'` (outra `string`),
-- e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` de três números).
+- A chave `nome` aponta para o valor `'Maria'` (um objeto `string`),
+- a chave `cidade` aponta para `'Londres'` (outra `string`),
+- e a chave `numeros_favoritos` aponta para `[7, 42, 92]` (uma `list` de três números).
 
 Você pode verificar o conteúdo de chaves individuais com a sintaxe:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(participant['name'])
-Ola
+>>> print(participante['nome'])
+Maria
 ```
 
 É similar a uma lista, mas você não precisa lembrar o índice - apenas o nome.
@@ -318,7 +318,7 @@ Dicionários, assim como listas, são *mutáveis*. Isso significa que eles podem
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant['favorite_language'] = 'Python'
+>>> participante['linguagem_favorita'] = 'Python'
 ```
 
 Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para aprender mais coisas incríveis.
@@ -328,12 +328,12 @@ Você pode mudar o valor associado a uma chave já criada no dicionário. Digite
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant['country'] = 'Germany'
->>> participant
-{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> participante['cidade'] = 'Paris'
+>>> participante
+{'cidade': 'Paris', 'linguagem_favorita': 'Python', 'nome': 'Maria'}
 ```
 
-Agora, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`. :) Emocionante? Uhu! Você acabou de aprender outra coisa incrível.
+Agora, o valor da chave `'cidade'` foi alterado de `'Londres'` para `'Paris'`. :) Emocionante? Uhu! Você acabou de aprender outra coisa incrível.
 
 ### Sumário
 
@@ -478,7 +478,7 @@ if 3 > 2:
     print('Funciona!')
 ```
 
-Notou que o texto na linha seguinte ao "if" começa depois de quatro espaços? Chamamos esse tipo de formatação de indentação. Precisamos dessa indentação para que o Python saiba quais linhas executar se a condição dentro do **if** for verdadeira. Você pode usar quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se você já começou a endentar com quatro espaços, siga esse padrão em todo o código -- ou você poderá encontrar problemas.
+Notou que o texto na linha seguinte ao "if" começa depois de quatro espaços? Chamamos esse tipo de formatação de indentação. Precisamos dessa indentação para que o Python saiba quais linhas executar se a condição dentro do **if** for verdadeira. Você pode usar quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se você já começou a indentar com quatro espaços, siga esse padrão em todo o código -- ou você poderá encontrar problemas.
 
 Salve o código e execute outra vez:
 
@@ -515,10 +515,10 @@ Se 2 fosse um número maior que 5, o segundo comando seria executado. Fácil, n�
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-name = 'Maria'
-if name == 'Renata':
+nome = 'Maria'
+if nome == 'Renata':
     print('Olá Renata!')
-elif name == 'Maria':
+elif nome == 'Maria':
     print('Olá Maria!')
 else:
     print('Olá estranho!')
@@ -608,7 +608,7 @@ oi()
 
 Ok, nossa primeira função está pronta!
 
-Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e as linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "oi()").
+Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e as linhas indentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "oi()").
 
 Vamos executá-la agora e ver o que acontece:
 
@@ -623,7 +623,7 @@ Vamos executá-la agora e ver o que acontece:
 
 - Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def oi()` e quando a chamou no final com `oi()`.
 - Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
-- Se a função não retornou nenhum resultado, certifique-se de que o útlimo `oi()`*não* esteja endentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
+- Se a função não retornou nenhum resultado, certifique-se de que o útlimo `oi()`*não* esteja indentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
 
 Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'oi' para quem o executa - com o nome dessa pessoa:
 
@@ -685,7 +685,7 @@ Ainda se lembra de listas? Vamos fazer uma lista de garotas:
 garotas = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
 ```
 
-A instrução `for` se comporta de maneira similar ao `if`; o código abaixo de qualquer uma destas instrução deve ser endentado com quatro espaços.
+A instrução `for` se comporta de maneira similar ao `if`; o código abaixo de qualquer uma destas instrução deve ser indentado com quatro espaços.
 
 Aqui está o código completo que será salvo no arquivo:
 
@@ -715,10 +715,10 @@ E quando rodamos:
     Olá Ola!
     Próxima
     Olá você!
-    Next girl
+    Próxima
 
 
-Como você pode ver, tudo o que colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `girls`.
+Como você pode ver, tudo o que colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `garotas`.
 
 Você também pode usar o `for` para números usando a função `range`:
 
