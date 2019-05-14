@@ -30,24 +30,24 @@ E adicione o seguinte texto ao arquivo `djangogirls/requirements.txt`:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
-    Django~={{ book.django_version }}
+    Django~=2.2
 
 
 Agora, execute `pip install -r requirements.txt` para instalar o Django.
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install -r requirements.txt
-    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
-      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+    ~$ pip install -r requirements.txt
+    Collecting Django~=2.2 (from -r requirements.txt (line 1))
+      Downloading Django-2.2-py3-none-any.whl (7.1MB)
     Installing collected packages: Django
-    Successfully installed Django-{{ book.django_version }}
+    Successfully installed Django-2.2
 
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Se você receber um erro ao chamar o pip na plataforma Windows, verifique se o caminho do projeto contém espaços, acentos ou caracteres especiais (exemplo, `C:\Users\User Name\djangogirls`). Se sim, considere movê-lo para outro lugar sem espaços, acentos ou caracteres especiais (sugestão: `C:\djangogirls`). Crie um novo virtualenv no diretório recém-criado, exclua o mais velho e tente novamente executar o comando acima. (Mover o diretório de virtualenv não vai funcionar pois o virtualenv usa caminhos absolutos.)
+> Se você receber um erro ao chamar o pip na plataforma Windows, verifique se o caminho do projeto contém espaços, acentos ou caracteres especiais (exemplo, `C:\Users\User Name\djangogirls`). Se sim, considere movê-lo para outro lugar sem espaços, acentos ou caracteres especiais (sugestão: `C:\djangogirls`).
 
 <!--endsec-->
 
