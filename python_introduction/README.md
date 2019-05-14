@@ -682,7 +682,7 @@ Ainda se lembra de listas? Vamos fazer uma lista de garotas:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-garotas = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
+garotas = ['Rachel', 'Monica', 'Phoebe', 'Maria', 'você']
 ```
 
 A instrução `for` se comporta de maneira similar ao `if`; o código abaixo de qualquer uma destas instrução deve ser indentado com quatro espaços.
@@ -695,7 +695,7 @@ Aqui está o código completo que será salvo no arquivo:
 def oi(nome):
     print('Oi ' + nome + '!')
 
-garotas = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
+garotas = ['Rachel', 'Monica', 'Phoebe', 'Maria', 'você']
 for nome in garotas:
     oi(nome)
     print('Próxima')
@@ -712,7 +712,7 @@ E quando rodamos:
     Próxima
     Olá Phoebe!
     Próxima
-    Olá Ola!
+    Olá Maria!
     Próxima
     Olá você!
     Próxima
