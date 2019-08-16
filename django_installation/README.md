@@ -20,20 +20,27 @@ Antes de fazer isto, devemos garantir que temos instalada a última versão do `
 
 O arquivo "requirements.txt" guarda as depenências que serão instaladas utilizando o `pip install`:
 
-Primeiramente, crie um arquivo `requirements.txt` dentro da pasta `djangogirls/`:
+Procure em seu computador o programa `Gedit`. Este programa é um editor de texto, ele vai te ajudar a criar todos os seus códigos!
 
+<!--Primeiramente, crie um arquivo `requirements.txt` dentro da pasta `djangogirls/`:-->
+
+<!--
     djangogirls
     └───requirements.txt
+-->
 
+<!--E adicione o seguinte texto ao arquivo `djangogirls/requirements.txt`:-->
 
-E adicione o seguinte texto ao arquivo `djangogirls/requirements.txt`:
+Na tela em branco, adicione o seguinte texto:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~=2.2
 
 
-Agora, execute `pip install -r requirements.txt` para instalar o Django.
+E salve o arquivo com o nome `requirements.txt` dentro da pasta `djangogirls/`.
+
+Agora, no terminal execute `pip install -r requirements.txt` para instalar o Django.
 
 {% filename %}command-line{% endfilename %}
 
