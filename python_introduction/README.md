@@ -106,7 +106,9 @@ OK, chega de strings. Até agora, você aprendeu sobre:
 - **operadores** -- como `+` e `*`, combinam valores para produzir um novo valor
 - **funções** -- como `upper()` e `len()`, executam ações nos objetos.
 
-Esse é o básico de todas as linguagens de programação que você aprender. Pronta para algo mais difícil? Apostamos que sim!
+Esse é o básico de todas as linguagens de programação que você pode aprender. Pronta para algo mais difícil? 
+
+Apostamos que sim! :)
 
 ## Erros
 
@@ -209,7 +211,7 @@ Tente o seguinte:
 Maria
 ```
 
-Quando você digita `nome`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
+Quando você digita `nome`, o interpretador de Python responde com a *representação* da variável 'nome' na forma de string, que é sequência de letras **M-a-r-i-a**, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções ou quando queremos imprimir algo em várias linhas.
 
@@ -243,9 +245,11 @@ Legal, criamos uma lista! O que podemos fazer com ela? Vamos ver quantos número
 6
 ```
 
-Sim! `len()` pode te dizer o número de objetos que fazem parte de uma lista. Uma mão na roda, né?
+Sim! `len()` pode te dizer o número de elementos que fazem parte de uma lista. Uma mão na roda, né?
 
-Se você quiser adicionar alguma coisa à sua lista, digite o seguinte comando:
+Como podemos adicionar elementos na lista?
+
+Para adicionar elementos à sua lista, digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -255,7 +259,7 @@ Se você quiser adicionar alguma coisa à sua lista, digite o seguinte comando:
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programadores preferem começar a contar a partir do zero, então o primeiro objeto em sua lista está no índice 0, o segundo no 1 e assim por diante. Tente isso:
+Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programadores preferem começar a contar a partir do zero, então o primeiro objeto em sua lista está no índice **0**, o segundo no 1 e assim por diante. Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
@@ -281,7 +285,7 @@ Um **dicionário** é similar a uma lista, mas para acessar seus valores você u
 {}
 ```
 
-Você acabou de criar um dicionário vazio. Uhuuu!
+Você acabou de criar um dicionário vazio. Uhuuu! :blush:
 
 Agora escreva o seguinte comando (e tente colocar suas próprias informações):
 
