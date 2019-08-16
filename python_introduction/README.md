@@ -285,7 +285,7 @@ Um **dicionário** é similar a uma lista, mas para acessar seus valores você u
 {}
 ```
 
-Você acabou de criar um dicionário vazio. Uhuuu! :blush:
+Você acabou de criar um dicionário vazio. Uhuuu! :)
 
 Agora escreva o seguinte comando (e tente colocar suas próprias informações):
 
@@ -325,7 +325,9 @@ Dicionários, assim como listas, são *mutáveis*. Isso significa que eles podem
 >>> participante['linguagem_favorita'] = 'Python'
 ```
 
-Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para aprender mais coisas incríveis.
+Espero que esteja fazendo sentido até agora :)
+
+Pronta para mais diversão com dicionários? Pule para a próxima linha para aprender mais coisas incríveis.
 
 Você pode mudar o valor associado a uma chave já criada no dicionário. Digite:
 
@@ -337,7 +339,9 @@ Você pode mudar o valor associado a uma chave já criada no dicionário. Digite
 {'cidade': 'Paris', 'linguagem_favorita': 'Python', 'nome': 'Maria'}
 ```
 
-Agora, o valor da chave `'cidade'` foi alterado de `'Londres'` para `'Paris'`. :) Emocionante? Uhu! Você acabou de aprender outra coisa incrível.
+Agora, o valor da chave `'cidade'` foi alterado de `'Londres'` para `'Paris'`.
+
+Emocionante? Uhu! Você acabou de aprender outra coisa incrível.  :)
 
 ### Sumário
 
@@ -371,11 +375,11 @@ True
 
 Demos ao Python alguns números para comparar. Como você pode ver, ele pode comparar não apenas números, mas também resultados de métodos. Legal, né?
 
-Você deve estar se perguntando por que colocamos dois sinais de igual `==` lado a lado para verificar se os números são iguais. Nós usamos um único `=` para atribuir valores a variáveis. Você sempre, **sempre**, precisa colocar dois `==` se quiser verificar se as coisas são iguais. Também é possível afirmar que as coisas são diferentes. Para isso, usamos o símbolo `!=`, como mostrado no exemplo acima.
+Você deve estar se perguntando por que colocamos dois sinais de igual **==** lado a lado para verificar se os números são iguais. Nós usamos um único **=** para atribuir valores a variáveis. Você sempre, **sempre**, precisa colocar dois **==** se quiser verificar se as coisas são iguais. Também é possível afirmar que as coisas são diferentes. Para isso, usamos o símbolo **!=**, como mostrado no exemplo acima.
 
 Dê ao Python mais duas tarefas:
 
-Já vimos `>` e `<`, mas o que significam `>=` e `<=`? Leia da seguinte forma:
+Já vimos **`>`** e **`<`**, mas o que significam **`>=`** e **`<=`**? Leia da seguinte forma:
 
 - x `>` y significa: x é maior que y
 - x `<` y significa: x é menor que y
@@ -393,10 +397,10 @@ Aliás, você acabou de aprender sobre um novo tipo de objeto em Python. Ele se 
 
 Existem apenas dois objetos booleanos:
 
-- True (verdadeiro)
-- False (falso)
+- **True** (verdadeiro)
+- **False** (falso)
 
-Para que o Python entenda, você precisa escrever exatamente *True* (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE ou tRUE não vão funcionar -- só True está correto.** (A mesma coisa vale para *False*, obviamente.)
+Para que o Python entenda, você precisa escrever exatamente **True** (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE ou tRUE não vão funcionar -- só True está correto.** (A mesma coisa vale para **False**.)
 
 Booleanos também podem ser variáveis! Veja:
 
@@ -408,7 +412,9 @@ Booleanos também podem ser variáveis! Veja:
 True
 ```
 
-Parabéns! Booleanos são um dos recursos mais interessantes na programação, e você acabou de aprender como usá-los!
+Parabéns!! :)
+
+Booleanos são um dos recursos mais interessantes na programação, e você acabou de aprender como usá-los!
 
 # Salve!
 
@@ -430,7 +436,7 @@ $
 
 Isso vai levá-la de volta ao prompt de comando.
 
-Mais cedo, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora, precisamos abrir o editor e escrever algum código em um novo arquivo:
+Agora, vamos abrir o editor de texto, procure em seu computador o programa `Gedit` (se estiver usando Ubuntu/Linux) e escrever algum código em um novo arquivo:
 
 {% filename %}editor{% endfilename %}
 
@@ -442,30 +448,41 @@ Agora você é uma desenvolvedora Python bastante experiente, então sinta-se li
 
 Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos nomear o arquivo **python_intro.py** e salvá-lo na sua área de trabalho. Podemos chamá-lo como quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador de Python pode rodá-lo.
 
-O arquivo está salvo, então é hora de executá-lo! Com as habilidades que você aprendeu na seção sobre linhas de comando, use o terminal para **ir para os diretórios no desktop**.
+O arquivo está salvo, então é hora de executá-lo!
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
 No prompt de comando Windows, é assim:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}linha de comando{% endfilename %}
 
     > cd %HomePath%\Desktop
 
 
 <!--endsec-->
 
-Se você tiver alguma dificuldade, é só pedir ajuda.
+<!--sec data-title="Change directory: Linux Terminal" data-id="python_linux" data-collapse=true ces-->
+
+No prompt de comando Linux, é assim:
+
+{% filename %}linha de comando{% endfilename %}
+
+    $ cd ~/Desktop
+
+
+<!--endsec-->
+
+Se você tiver alguma dificuldade, é só pedir ajuda. :)
 
 Agora use o interpretador de Python para executar o código que está no arquivo, assim:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python python_intro.py
+    $ python3 python_intro.py
     Hello, Django girls!
 
 
-Muito bem! Você acabou de rodar seu primeiro programa em Python que foi salvo em um arquivo. Arrasou!
+Muito bem! Você acabou de rodar seu primeiro programa em Python que foi salvo em um arquivo. Arrasou! ;)
 
 Agora, você pode começar a aprender uma ferramenta essencial na programação:
 
@@ -489,7 +506,7 @@ Salve o código e execute outra vez:
 {% filename %}command-line{% endfilename %}
 
 ```python
-$ python python_intro.py
+$ python3 python_intro.py
 Funciona!
 ```
 
@@ -699,10 +716,9 @@ Aqui está o código completo que será salvo no arquivo:
 def oi(nome):
     print('Oi ' + nome + '!')
 
-garotas = ['Rachel', 'Monica', 'Phoebe', 'Maria', 'você']
+garotas = ['Rachel', 'Monica', 'Joana', 'Maria', 'você']
 for nome in garotas:
     oi(nome)
-    print('Próxima')
 ```
 
 E quando rodamos:
@@ -710,19 +726,14 @@ E quando rodamos:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Olá Rachel!
-    Próxima
-    Olá Monica!
-    Próxima
-    Olá Phoebe!
-    Próxima
-    Olá Maria!
-    Próxima
-    Olá você!
-    Próxima
+    Oi Rachel!
+    Oi Monica!
+    Oi Joana!
+    Oi Maria!
+    Oi você!
 
 
-Como você pode ver, tudo o que colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `garotas`.
+Como você pode ver, tudo o que colocar dentro de uma instrução **`for`** com espaço será repetido para cada elemento da lista **`garotas`**.
 
 Você também pode usar o `for` para números usando a função `range`:
 
@@ -733,7 +744,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Que deve imprimir:
+Deve imprimir:
 
 {% filename %}command-line{% endfilename %}
 
@@ -750,7 +761,9 @@ Note que o segundo desses dois números não está incluído na lista que o Pyth
 
 ## Sumário
 
-É isso. **Arrasou!** Esse foi um capítulo difícil, então você deve estar orgulhosa. Nós estamos orgulhosas de você por ter conseguido ir tão longe!
+É isso. **Arrasou!** Esse foi um capítulo difícil, então você deve estar orgulhosa.
+
+Nós estamos orgulhosas de você por ter conseguido ir tão longe!
 
 Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Lá você encontrará um guia da linguagem mais exaustivo e completo. Até lá :)
 
