@@ -436,7 +436,7 @@ $
 
 Isso vai levá-la de volta ao prompt de comando.
 
-Agora, vamos abrir o editor de texto, procure em seu computador o programa `Gedit` (se estiver usando Ubuntu/Linux) e escrever algum código em um novo arquivo:
+Agora, vamos abrir o editor de texto. Procure em seu computador o programa `Gedit` (se estiver usando Ubuntu/Linux), ou o editor `IDLE` (se estiver usando Windows) e escreva algum código em um novo arquivo:
 
 {% filename %}editor{% endfilename %}
 
