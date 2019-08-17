@@ -14,7 +14,7 @@ Abra o seu terminal (não o PythonAnywhere) e digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py shell
+    ~/djangogirls$ python3 manage.py shell
     
 
 O resultado deve ser:
