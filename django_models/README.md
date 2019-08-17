@@ -65,12 +65,12 @@ Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso 
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py startapp blog
+    ~/djangogirls$ python3 manage.py startapp blog
 
 
 {% filename %}Windows:{% endfilename %}
 
-    (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
+    C:\Users\Name\djangogirls> python manage.py startapp blog
 
 
 Você vai notar que um novo diretório `blog` foi criado e que ele contém vários arquivos. Algo como a lista abaixo:
@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` -- este é um lugar em que vamos definir nossa postagem do blog.
 
-Vamos abrir `blog/models.py`, remover tudo dele e escrever o código assim:
+Vamos abrir no editor de texto o arquivo `blog/models.py`, remover tudo dele e escrever o código assim:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -165,17 +165,17 @@ E `def publish(self):`? Esse é justamente o método `publish` de que falamos an
 
 Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Neste caso, quando chamarmos `__str__()`, obteremos um texto (**string**) com o título do Post.
 
-Lembre-se também de que tanto `def publish(self):` quanto `def __str__(self):` são endentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos endentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe e você poderá obter um comportamento inesperado.
+Lembre-se também de que tanto `def publish(self):` quanto `def __str__(self):` são indentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos indentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe e você poderá obter um comportamento inesperado.
 
 Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas esperamos que isto se pareça um pouco menos com mágica agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
-O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Nós acabamos de criar um modelo de Post!) Vá para o console e digite `python manage.py makemigrations blog`. Deve ficar assim:
+O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Nós acabamos de criar um modelo de Post!) Vá para o terminal e digite `python3 manage.py makemigrations blog`. Deve ficar assim:
 
 {% filename %}command-line{% endfilename %}
 
-    ~/djangogirls$ python manage.py makemigrations blog
+    ~/djangogirls$ python3 manage.py makemigrations blog
     Migrations for 'blog':
       blog/migrations/0001_initial.py:
 
@@ -184,11 +184,11 @@ O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente,
 
 **Observação:** Lembre-se de salvar os arquivos que você editar. Caso contrário, o computador executará uma versão antiga que pode gerar mensagens de erro inesperadas.
 
-O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco de dados. Digite `python manage.py migrate blog` e a saída deve ser:
+O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco de dados. Digite `python3 manage.py migrate blog` e a saída deve ser:
 
 {% filename %}command-line{% endfilename %}
 
-    ~/djangogirls$ python manage.py migrate blog
+    ~/djangogirls$ python3 manage.py migrate blog
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
