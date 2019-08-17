@@ -48,7 +48,7 @@ Adicione a seguinte linha ao template:
 
 Como está o nosso site agora? Visite a página descobrir: http://127.0.0.1:8000/
 
-![Figura 11.2](images/step3.png)
+![Figura 11.2](images/imagem_html.PNG)
 
 Funcionou! Bom trabalho :)
 
@@ -83,7 +83,7 @@ Por exemplo, você pode incluir o elemento título de uma página web dentro da 
 
 Salve o arquivo e atualize a página.
 
-![Figura 11.3](images/step4.png)
+![Figura 11.3](images/imagem_html2.png)
 
 Viu como o navegador entendeu que "Blog da Maria" é o título da página? Ele interpretou `<title>Blog da Maria</title>` e colocou o texto na barra de título do seu navegador (o texto também será usado nos favoritos e outras coisas mais).
 
