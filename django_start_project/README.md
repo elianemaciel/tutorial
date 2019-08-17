@@ -77,21 +77,17 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponderá ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então vamos mudamos a seguinte configuração:
+<!--Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponderá ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então vamos mudamos a seguinte configuração:-->
 
-{% filename %}mysite/settings.py{% endfilename %}
+<!--{% filename %}mysite/settings.py{% endfilename %}-->
 
-```python
+<!--```python
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-```
-
-> **Observação:** Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
->
-> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9.
+```-->
 
 ## Configurando um banco de dados
 
-Existem vários software de banco de dados diferentes que podem armazenar dados para o seu site. Nós vamos usar o padrão do Django, o `sqlite3`.
+Existem vários softwares de banco de dados diferentes que podem armazenar dados para o seu site. Nós vamos usar o padrão do Django, o `sqlite3`.
 
 Isto já está configurado nesta parte do seu arquivo `mysite/settings.py`:
 
@@ -106,11 +102,11 @@ DATABASES = {
 }
 ```
 
-Para criar um banco de dados para o nosso blog, vamos executar o seguinte comando no console. Digite: `python manage.py migrate` (precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`). Se isso der certo, você deve ver algo assim:
+Para criar um banco de dados para o nosso blog, vamos executar o seguinte comando no terminal. Digite: `python3 manage.py migrate` (precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`). Se isso der certo, você deve ver algo assim:
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py migrate
+    (myvenv) ~/djangogirls$ python3 manage.py migrate
     Operations to perform:
       Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
@@ -133,18 +129,11 @@ Pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
 
 ## Iniciando o servidor web
 
-Você precisa estar no diretório que contém o arquivo `manage.py` (o diretório `djangogirls`). No console, nós podemos iniciar o servidor web executando o `python manage.py runserver`:
+Você precisa estar no diretório que contém o arquivo `manage.py` (o diretório `djangogirls`). No terminal, nós podemos iniciar o servidor web executando o `python3 manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
-    ~/djangogirls$ python manage.py runserver
-
-
-Se você usa um Chromebook, execute este comando:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    ~/djangogirls$ python3 manage.py runserver
 
 
 Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o comando alternativo:
@@ -161,19 +150,12 @@ Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Fir
     http://127.0.0.1:8000/
 
 
-Se você estiver com um Chromebook, sempre visite o servidor de teste acessando:
-
-{% filename %}browser{% endfilename %}
-
-    https://django-girls-<your cloud9 username>.c9users.io
-
-
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 
 ![Instalação funcionou!](images/install_worked.png)
 
 Enquanto o servidor estiver rodando, o prompt do terminal não estará disponível para receber novos comandos. Na realidade, o terminal permite que você escreva texto, mas não irá executar nenhum comando. Isto acontece porque o servidor bloqueia o terminal enquanto ele mesmo recebe novos comandos.
 
-Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
+Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL + C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
 
 Pronta para o próximo passo? Está na hora de criar conteúdo!
