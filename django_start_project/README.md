@@ -147,7 +147,7 @@ Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Fir
 
 {% filename %}browser{% endfilename %}
 
-    http://127.0.0.1:8000/
+    http://localhost:8000/
 
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
