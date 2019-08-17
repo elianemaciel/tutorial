@@ -15,21 +15,16 @@ admin.site.register(Post)
 
 Como você pode ver, nós importamos (incluímos) o modelo Post definido no capítulo anterior. Para tornar nosso modelo visível na página de administração, precisamos registrá-lo com `admin.site.register(Post)`.
 
-OK, hora de olhar para o nosso modelo de Post. Lembre-se de executar `python manage.py runserver` no console para iniciar o servidor web. Vá para o seu navegador e digite o endereço http://127.0.0.1:8000/admin/. Você verá uma página de login como essa:
-
-![Página de login](images/login_page2.png)
-
-Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta de usuário que pode controlar tudo no site. Volte à linha de comando, digite `python manage.py createsuperuser` e aperte Enter.
+Agora você precisará fazer a criação de um *superusuário (superuser)* - uma conta de usuário que pode controlar tudo no site. Então, no terminal digite `python manage.py createsuperuser` e aperte Enter.
 
 {% filename %}Mac OS X ou Linux:{% endfilename %}
 
-    ~/djangogirls$ python manage.py createsuperuser
+    ~/djangogirls$ python3 manage.py createsuperuser
 
 
 {% filename %}Windows:{% endfilename %}
 
     C:\Users\Name\djangogirls> python manage.py createsuperuser
-
 
 Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe se você não conseguir ver a senha que está digitando – é assim que tem ser.** Basta digitá-la e clicar `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
 
@@ -39,8 +34,11 @@ Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espa
     Password (again):
     Superuser created successfully.
 
+OK, hora de olhar para o nosso modelo de Post. Lembre-se de executar `python manage.py runserver` no terminal para iniciar o servidor web. Vá para o seu navegador e digite o endereço http://localhost:8000/admin/. Você verá uma página de login como essa:
 
-Volte ao seu navegador. Faça login com as credenciais de superusuário que você escolheu; você deverá ver o painel de controle de administração do Django.
+![Página de login](images/login_page2.png)
+
+Faça login com as credenciais de superusuário que você escolheu; você deverá ver o painel de controle de administração do Django.
 
 ![Django Admin](images/django_admin3.png)
 
