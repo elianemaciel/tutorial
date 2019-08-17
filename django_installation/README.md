@@ -11,6 +11,13 @@ Para este tutorial, usaremos um novo diretório `djangogirls` no seu diretório 
 
 Antes de fazer isto, devemos garantir que temos instalada a última versão do `pip`, que é o software que usamos para instalar o Django:
 
+<!--sec data-title="Lembrete Python" data-id="lembrete_python"
+data-collapse=true ces-->
+
+> Lembre-se: se estiver utilizando Linux/Ubuntu o comando deve ser `python3`. Em Windows utiliza-se `python`.
+
+<!--endsec-->
+
 {% filename %}command-line{% endfilename %}
 
     ~$ python3 -m pip install --upgrade pip
