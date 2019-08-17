@@ -40,8 +40,8 @@ Adicione a seguinte linha ao template:
 ```html
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Olá mundo!</p>
+    <p>Está funcionando!</p>
 </body>
 </html>
 ```
@@ -55,7 +55,7 @@ Funcionou! Bom trabalho :)
 * A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Todo o conteúdo de um website se encontra entre a tag de início `<html>` e a tag de fim `</html>`
 * `<p>` é a tag que inicia um parágrafos; `</p>` determina o fim de um parágrafo
 
-## "Head" e "body"
+## "head" e "body"
 
 Cada página HTML também é dividida em dois elementos: **head** (cabeçalho) e **body** (corpo).
 
@@ -72,11 +72,11 @@ Por exemplo, você pode incluir o elemento título de uma página web dentro da 
 ```html
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Blog da Maria</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Olá mundo!</p>
+        <p>Está funcionando!</p>
     </body>
 </html>
 ```
@@ -85,7 +85,7 @@ Salve o arquivo e atualize a página.
 
 ![Figura 11.3](images/step4.png)
 
-Viu como o navegador entendeu que "Ola's blog" é o título da página? Ele interpretou `<title>Ola's blog</title>` e colocou o texto na barra de título do seu navegador (o texto também será usado nos favoritos e outras coisas mais).
+Viu como o navegador entendeu que "Blog da Maria" é o título da página? Ele interpretou `<title>Blog da Maria</title>` e colocou o texto na barra de título do seu navegador (o texto também será usado nos favoritos e outras coisas mais).
 
 Provavelmente você já deve ter notado que cada tag de abertura casa com uma *tag de fechamento*, com uma `/`, e que os elementos estão *aninhados* (ex.: você não pode fechar uma tag específica antes que todas as outras tags dentro dela estejam fechadas).
 
