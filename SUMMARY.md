@@ -14,5 +14,6 @@
 * [Dados dinâmicos em templates](dynamic_data_in_templates/README.md)
 * [Templates do Django](django_templates/README.md)
 * [CSS - Deixe tudo mais bonito!](css/README.md)
+* [Estendendo os templates](template_extending/README.md)
 * [Amplie sua aplicação](extend_your_application/README.md)
 * [O que vem agora?](whats_next/README.md)
