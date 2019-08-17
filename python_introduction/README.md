@@ -446,7 +446,7 @@ print('Hello, Django girls!')
 
 Agora você é uma desenvolvedora Python bastante experiente, então sinta-se livre para escrever códigos com o que aprendeu hoje.
 
-Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos nomear o arquivo **python_intro.py** e salvá-lo na sua área de trabalho. Podemos chamá-lo como quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador de Python pode rodá-lo.
+Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos nomear o arquivo **python_intro.py** e salvá-lo na sua pasta pessoal. Podemos chamá-lo como quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador de Python pode rodá-lo.
 
 O arquivo está salvo, então é hora de executá-lo!
 
@@ -456,18 +456,18 @@ No prompt de comando Windows, é assim:
 
 {% filename %}linha de comando{% endfilename %}
 
-    > cd %HomePath%\Desktop
+    > cd %HomePath%\
 
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Linux Terminal" data-id="python_linux" data-collapse=true ces-->
 
-No prompt de comando Linux, é assim:
+No prompt de comando Linux/Ubuntu, é assim:
 
 {% filename %}linha de comando{% endfilename %}
 
-    $ cd ~/Desktop
+    $ cd ~/
 
 
 <!--endsec-->
