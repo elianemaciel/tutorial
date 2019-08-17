@@ -83,7 +83,7 @@ Por exemplo, você pode incluir o elemento título de uma página web dentro da 
 
 Salve o arquivo e atualize a página.
 
-![Figura 11.3](images/imagem_html2.png)
+![Figura 11.3](images/imagem_html2.PNG)
 
 Viu como o navegador entendeu que "Blog da Maria" é o título da página? Ele interpretou `<title>Blog da Maria</title>` e colocou o texto na barra de título do seu navegador (o texto também será usado nos favoritos e outras coisas mais).
 
