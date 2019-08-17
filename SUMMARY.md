@@ -10,6 +10,7 @@
 * [Django - URLs](django_urls/README.md)
 * [Django views - hora de criar!](django_views/README.md)
 * [Introdução ao HTML](html/README.md)
+* [Queysets e ORM do Django](django_orm/README.md)
 * [Dados dinâmicos em templates](dynamic_data_in_templates/README.md)
 * [Templates do Django](django_templates/README.md)
 * [CSS - Deixe tudo mais bonito!](css/README.md)
