@@ -8,11 +8,11 @@ Os nomes de alguns arquivos e diretórios são muito importantes para o Django. 
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no final!**):
+No seu terminal, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no final!**):
 
 {% filename %}command-line{% endfilename %}
 
-    C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
+    ~/djangogirls$ django-admin startproject mysite .
 
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
@@ -32,7 +32,7 @@ No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no
     └───requirements.txt
 
 
-> **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
+> **Dica:** Para visualizar os arquivos de uma pasta em seu terminal digite `ls` no Linux/Ubuntu ou `dir` no Windows.
 
 `manage.py` é um script que ajuda com a gestão do site. Com ele, podemos iniciar um servidor de web no nosso computador sem instalar nada, entre outras coisas.
 
