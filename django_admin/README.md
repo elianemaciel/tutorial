@@ -15,7 +15,7 @@ admin.site.register(Post)
 
 Como você pode ver, nós importamos (incluímos) o modelo Post definido no capítulo anterior. Para tornar nosso modelo visível na página de administração, precisamos registrá-lo com `admin.site.register(Post)`.
 
-Agora você precisará fazer a criação de um *superusuário (superuser)* - uma conta de usuário que pode controlar tudo no site. Então, no terminal digite `python manage.py createsuperuser` e aperte Enter.
+Agora você precisará fazer a criação de um *superusuário (superuser)* - uma conta de usuário que pode controlar tudo no site. Então, no terminal digite `python3 manage.py createsuperuser` e aperte Enter.
 
 {% filename %}Mac OS X ou Linux:{% endfilename %}
 
