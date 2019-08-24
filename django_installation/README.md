@@ -9,13 +9,13 @@ Para este tutorial, usaremos um novo diretório `djangogirls` no seu diretório 
 
 ## Instalando o Django
 
-Primeiro, instale o pip:
+Primeiro, instale o pip. Quando pedir a senha, digite `set01linf`. Sua senha não vai aparecer, e está correto! Se houver dúvidas, chame uma treinadora.
 
 {% filename %}command-line{% endfilename %}
 
     ~$ sudo apt install python3-pip
-    
-Use a senha `set01linf`
+
+Após, atualize o pip:
 
 <!-- Antes de fazer isto, devemos garantir que temos instalada a última versão do `pip`, que é o software que usamos para instalar o Django: -->
 
