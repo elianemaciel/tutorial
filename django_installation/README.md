@@ -28,7 +28,7 @@ Lembre-se: se estiver utilizando Linux/Ubuntu o comando deve ser `python3`. Em W
 
 <!-- {% filename %}command-line{% endfilename %} -->
 
-    ~$ python3 -m pip install --upgrade pip
+    ~$ sudo python3 -m pip install --upgrade pip
 
 Agora, digite o seguinte comando para realizar a instalação do Django.
 
