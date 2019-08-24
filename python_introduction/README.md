@@ -452,29 +452,29 @@ O arquivo está salvo, então é hora de executá-lo!
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-No prompt de comando Windows, é assim:
+<!--No prompt de comando Windows, é assim:-->
 
-{% filename %}linha de comando{% endfilename %}
+<!--{% filename %}linha de comando{% endfilename %}-->
 
-    > cd %HomePath%\
+    <!--> cd %HomePath%\-->
 
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Linux Terminal" data-id="python_linux" data-collapse=true ces-->
 
-No prompt de comando Linux/Ubuntu, é assim:
+<!--No prompt de comando Linux/Ubuntu, é assim:-->
 
-{% filename %}linha de comando{% endfilename %}
+<!--{% filename %}linha de comando{% endfilename %}-->
 
-    $ cd ~/
+    <!--$ cd ~/-->
 
 
 <!--endsec-->
 
-Se você tiver alguma dificuldade, é só pedir ajuda. :)
-
 Agora use o interpretador de Python para executar o código que está no arquivo, assim:
+
+Se você tiver alguma dificuldade, é só pedir ajuda. :)
 
 {% filename %}command-line{% endfilename %}
 
