@@ -592,7 +592,7 @@ Vamos ver como isso funciona:
 
 ```python
 # Mudar o volume se estiver muito alto ou muito baixo
-if volume < 20 or volume > 80
+if volume < 20 or volume > 80:
     volume = 50
     print("Bem melhor!")
 ```
