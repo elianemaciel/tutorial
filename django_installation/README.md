@@ -34,7 +34,7 @@ Agora, digite o seguinte comando para realizar a instalação do Django.
 
 {% filename %}command-line{% endfilename %}
 
-    sudo python3 -m pip install Django
+    sudo python3 -m pip install Django==2.0
 
 Você verá a seguinte mensagem na tela.
 
