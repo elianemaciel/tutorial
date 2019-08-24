@@ -68,13 +68,21 @@ Nós não vamos nos aprofundar muito no aprendizado do CSS aqui. No final desta 
 
 Mas vamos fazer pelo menos um pouco. Vamos mudar a cor do nosso cabeçalho? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
 
-Em seu arquivo `blog/static/css/blog.css`, adicione o seguinte código:
+Em seu arquivo `blog/static/css/blog.css`, adicione os seguintes códigos, que deixarão sua página mais elegante:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
+body {
+    padding-left: 15px;    
+}
+
 h1 a {
-    color: #FCA205;
+    color: #FCA205;    
+}
+
+h1 {
+    font-family: 'Lobster';
 }
 ```
 
@@ -111,7 +119,7 @@ Agora, seu arquivo deve estar assim:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -135,21 +143,15 @@ Agora, seu arquivo deve estar assim:
 </html>
 ```
 
-OK, salve o arquivo e atualize o site!
+OK, salve o arquivo. No terminal, pare o processo do Django com as teclas `Ctrl + C` e em seguida digite o seguinte comando:
 
-![Figura 14.2](images/color2.png)
+{% filename %}Terminal{% endfilename %}
 
-Bom trabalho! Que tal a gente dar um pouco de espaço ao nosso site e aumentar a margem do lado esquerdo? Vamos tentar!
+    python3 manage.py collectstatic
+    
+Este comando irá atualizar seus arquivos estáticos. 
 
-{% filename %}blog/static/css/blog.css{% endfilename %}
-
-```css
-body {
-    padding-left: 15px;
-}
-```
-
-Adicione isto ao seu CSS, salve o arquivo e veja como funciona!
+Lembre-se de rodar novamente seu servidor com `python3 manage.py runserver` e atualize sua página.
 
 ![Figura 14.3](images/margin2.png)
 
@@ -163,16 +165,7 @@ E que tal customizar a fonte no nosso cabeçalho? Cole o seguinte na seção `<h
 
 Assim como antes, cheque a ordem e a posição antes do link para `blog/static/css/blog.css`. Esta linha importará do Google Fonts (https://www.google.com/fonts) uma fonte chamada *Lobster*.
 
-Encontre o bloco de declaração `h1 a` (o código entre chaves `{` e `}`) no arquivo CSS `blog/static/css/blog.css`. Agora, adicione a linha `font-family: 'Lobster';` entre as chaves e atualize a página:
-
-{% filename %}blog/static/css/blog.css{% endfilename %}
-
-```css
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
-}
-```
+Atualize a página!
 
 ![Figura 14.3](images/font.png)
 
@@ -291,7 +284,7 @@ por isto:
 </div>
 ```
 
-Salve esses arquivos e atualize seu site.
+Salve esses arquivos, rode novamente o comando `python3 manage.py collectstatic` para atualizar o arquivo de CSS, e rode novamente seu servidor. Atualize seu site!
 
 ![Figura 14.4](images/final.png)
 
