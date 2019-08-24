@@ -67,7 +67,7 @@ O Django agora irá redirecionar tudo o que entra em 'http://127.0.0.1:8000 /'pa
 
 ## blog.urls
 
-Crie um novo arquivo vazio chamado `urls.py` no diretório `blog`. É fácil! Basta adicionar essas duas linhas:
+Vamos criar um novo arquivo para suas urls! No seu editor de texto procure pelo ícone de "Criar um novo documento". Depois, inclua os seguintes comandos:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -87,6 +87,8 @@ urlpatterns = [
     path('', views.post_list, name='post_list'),
 ]
 ```
+
+Clique em salvar, e procure pela pasta `djangogirls/blog`. Coloque o nome `urls.py` no seu arquivo e salve.
 
 Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` à URL raiz. Este padrão de URL corresponde a uma sequência de caracteres vazia, e o resolvedor de URLs do Django irá ignorar o nome de domínio (ou seja, http://127.0.0.1:8000 /) que antecede o caminho completo da URL. Este padrão dirá ao Django que `views.post_list` é o lugar correto aonde ir se alguém entra em seu site pelo endereço 'http://127.0.0.1:8000 /'.
 
